@@ -7,778 +7,496 @@ title: "Welcome to Powerlenses"
 
 <head>
 
-    <!-- meta tags -->
-    <meta charset="utf-8">
-    <meta name="keywords" content="bootstrap 5, premium, multipurpose, sass, scss, saas" />
-    <meta name="description" content="Bootstrap 5 Landing Page Template" />
-    <meta name="author" content="www.themeht.com" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- meta tags -->
+<meta charset="utf-8">
+<meta name="keywords" content="bootstrap 5, premium, multipurpose, sass, scss, saas" />
+<meta name="description" content="Bootstrap 5 Landing Page Template" />
+<meta name="author" content="www.themeht.com" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Title -->
-    <title>Powerlenses | Powering your vision</title>
+<!-- Title -->
+<title>Powerlenses | Powering your vision</title>
 
-    <!-- Favicon Icon -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico" />
+<!-- Favicon Icon -->
+<link rel="shortcut icon" href="assets/images/logo_powerlenses.png" />
 
-    <!-- inject css start -->
+<!-- inject css start -->
 
-    <!--== bootstrap -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!--== bootstrap -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
 
-    <!--== animate -->
-    <link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
+<!--== animate -->
+<link href="assets/css/animate.css" rel="stylesheet" type="text/css" />
 
-    <!--== line-awesome -->
-    <link href="assets/css/line-awesome.min.css" rel="stylesheet" type="text/css" />
+<!--== line-awesome -->
+<link href="assets/css/line-awesome.min.css" rel="stylesheet" type="text/css" />
 
-    <!--== magnific-popup -->
-    <link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css" />
+<!--== magnific-popup -->
+<link href="assets/css/magnific-popup.css" rel="stylesheet" type="text/css" />
 
-    <!--== owl.carousel -->
-    <link href="assets/css/owl.carousel.css" rel="stylesheet" type="text/css" />
+<!--== owl.carousel -->
+<link href="assets/css/owl.carousel.css" rel="stylesheet" type="text/css" />
 
-    <!--== spacing -->
-    <link href="assets/css/spacing.css" rel="stylesheet" type="text/css" />
+<!--== spacing -->
+<link href="assets/css/spacing.css" rel="stylesheet" type="text/css" />
 
-    <!--== theme.min -->
-    <link href="assets/css/theme.min.css" rel="stylesheet" />
+<!--== theme.min -->
+<link href="assets/css/theme.min.css" rel="stylesheet" />
 
-    <!-- inject css end -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<style>
+	.adminActions {
+  position: fixed;
+  bottom: 35px; right: 35px;
+}
 
+  .adminButton {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(67, 83, 143, .8);
+    border-radius: 50%;
+    display: block;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+
+    .adminButton i {
+      font-size: 22px;
+    }
+
+  .adminButtons {
+    position: absolute;
+    width: 100%;
+    bottom: 120%;
+    text-align: center;
+  }
+
+    .adminButtons a {
+      display: block;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      text-decoration: none;
+      margin: 10px auto 0;
+      line-height: 1.15;
+      color: #fff;
+      opacity: 0;
+      visibility: hidden;
+      position: relative;
+      box-shadow: 0 0 5px 1px rgba(51, 51, 51, .3);
+    }
+
+      .adminButtons a:hover {
+        transform: scale(1.05);
+      }
+
+      .adminButtons a:nth-child(1) {background-color: #ff5722; transition: opacity .2s ease-in-out .3s, transform .15s ease-in-out;}
+      .adminButtons a:nth-child(4) {background-color: #03a9f4; transition: opacity .2s ease-in-out .25s, transform .15s ease-in-out;}
+      .adminButtons a:nth-child(3) {background-color: #f44336; transition: opacity .2s ease-in-out .2s, transform .15s ease-in-out;}
+      .adminButtons a:nth-child(2) {background-color: #4CAF50; transition: opacity .2s ease-in-out .15s, transform .15s ease-in-out;}
+
+      .adminActions a i {
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+  .adminToggle {
+    -webkit-appearance: none;
+    position: absolute;
+    border-radius: 50%;
+    top: 0; left: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 2;
+    transition: box-shadow .2s ease-in-out;
+    box-shadow: 0 3px 5px 1px rgba(51, 51, 51, .3);
+  }
+
+    .adminToggle:hover {
+      box-shadow: 0 3px 6px 2px rgba(51, 51, 51, .3);
+    }
+
+    .adminToggle:checked ~ .adminButtons a {
+      opacity: 1;
+      visibility: visible;
+    }
+</style>
+
+<!-- inject css end -->
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=60d3397179f93f0012fe54e0&product=sticky-share-buttons" async="async"></script>
 </head>
 
 <body>
 
-    <!-- page wrapper start -->
+<!-- page wrapper start -->
 
-    <div class="page-wrapper">
+<div class="page-wrapper">
+  
+<!-- preloader start -->
 
-        <!-- preloader start -->
+<div id="ht-preloader">
+  <div class="loader clear-loader"> <span>P</span>
+    <span>o</span>
+    <span>w</span>
+    <span>e</span>
+    <span>r</span>
+    <span>l</span>
+    <span>e</span>
+    <span>n</span>
+    <span>s</span>
+    <span>e</span>
+    <span>s</span>
+  </div>
+</div>
 
-        <div id="ht-preloader">
-            <div class="loader clear-loader"> <span>P</span>
-                <span>o</span>
-                <span>w</span>
-                <span>e</span>
-                <span>r</span>
-                <span>l</span>
-                <span>e</span>
-                <span>n</span>
-                <span>s</span>
-                <span>e</span>
-                <span>s</span>
+<!-- preloader end -->
+<div class="sharethis-sticky-share-buttons"></div>
+
+<!--header start-->
+
+<header class="site-header">
+  <div id="header-wrap">
+    <div class="container">
+      <div class="row">
+        <!--menu start-->
+        <div class="col"> 
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand logo text-primary mb-0 font-w-7" style="font-size: 2rem;" href="/">
+				<img src="assets/images/logo_powerlenses.png" width="15%">
+              P<span class="text-dark font-w-4">owerlenses.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item"> 
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+					<a class="nav-link" href="#">Produk</a>
+                </li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Tentang</a>
+                </li>
+              </ul>
             </div>
+            <div class="d-sm-flex align-items-center justify-content-end"> 
+				<a class="btn btn-primary btn-sm ms-3 d-sm-inline-block d-none" href="https://wa.me/6281914921646?text=Saya%20sudah%20melihat%20website%20anda%20dan%20ingin%20tahu%20lebih%20lanjut" target="_blank">Whatsapp</a> 
+          </div>
+          </nav>
+          
         </div>
-
-        <!-- preloader end -->
-
-
-        <!--header start-->
-
-        <header class="site-header">
-            <div id="header-wrap" class="position-absolute w-100 z-index-1">
-                <div class="container">
-                    <div class="row">
-                        <!--menu start-->
-                        <div class="col">
-                            <nav class="navbar navbar-expand-lg navbar-light justify-content-start">
-                                <a class="navbar-brand logo text-primary mb-0 font-w-7 me-6" href="index.html">
-                                    P<span class="text-dark font-w-4">owerlenses.</span>
-                                </a>
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="navbarNav">
-                                    <ul class="navbar-nav me-auto">
-                                        <li class="nav-item"> <a class="nav-link  active" href="/">Home</a>
-                                        </li>
-                                        <li class="nav-item"> <a class="nav-link" href="/">Produk</a>
-                                        </li>
-                                        <li class="nav-item"> <a class="nav-link" href="/">Tentang Kami</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="d-sm-flex align-items-center justify-content-end ms-auto">
-                                    <a class="btn btn-light btn-sm ms-3 d-sm-inline-block d-none"
-                                        href="signup.html">WhatsApp!</a>
-                                </div>
-                            </nav>
-
-                        </div>
-                        <!--menu end-->
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!--header end-->
-
-
-        <!--hero section start-->
-
-        <section class="custom-py-1 position-relative hero-shape3 overflow-hidden">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12 col-lg-5 col-xl-6 order-lg-2 mb-8 mb-lg-0">
-                        <!-- Image -->
-                        <img src="assets/images/product.png" class="img-fluid" alt="...">
-                    </div>
-                    <div class="col-12 col-lg-7 col-xl-6 order-lg-1">
-                        <h1 class="display-6 mb-3">
-                            Powerlenses <br><span class="font-w-7">Powering your vision</span>
-                        </h1>
-                        <!-- Text -->
-                        <p class="lead text-muted mb-4">We use the latest technologies it voluptatem accusantium
-                            doloremque laudantium. Build a Beautiful, Clean & Modern Design website with flexible
-                            Bootstrap components.</p>
-                        <!-- Buttons -->
-                        <a href="#" class="btn btn-sm btn-primary text-start me-1"> <i
-                                class="la la-apple me-2 ic-2x d-inline-block"></i>
-                            <div class="d-inline-block"> <small class="d-block">Available On The</small>
-                                App Store</div>
-                        </a>
-                        <a href="#" class="btn btn-sm btn-dark text-start"> <i
-                                class="la la-android me-2 ic-2x d-inline-block"></i>
-                            <div class="d-inline-block"> <small class="d-block">Android App On</small>
-                                Google Play</div>
-                        </a>
-                    </div>
-                </div>
-                <!-- / .row -->
-            </div>
-            <!-- / .container -->
-        </section>
-
-        <!--hero section end-->
-
-
-        <!--body content start-->
-
-        <div class="page-content">
-
-            <!--feature start-->
-
-            <section>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4">
-                            <div>
-                                <h2 class="mb-0"><span class="font-w-4 d-block">Trusted people </span> with winck</h2>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 mt-3 mt-lg-0">
-                            <div class="row align-items-center">
-                                <div class="col-12 col-sm-4">
-                                    <div class="counter">
-                                        <div class="counter-desc"> <span class="count-number h2 text-primary"
-                                                data-to="50" data-speed="2000">50</span>
-                                            <span class="h2 text-primary">+</span>
-                                            <h6 class="text-muted mb-0">Support Member</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-4 mt-2 mt-sm-0">
-                                    <div class="counter">
-                                        <div class="counter-desc"> <span class="count-number h2 text-primary"
-                                                data-to="99" data-speed="2000">99</span>
-                                            <span class="h2 text-primary">+</span>
-                                            <h6 class="text-muted mb-0">People Love Us</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-4 mt-2 mt-sm-0">
-                                    <div class="counter">
-                                        <div class="counter-desc"> <span class="count-number h2 text-primary"
-                                                data-to="120" data-speed="2000">120</span>
-                                            <span class="h2 text-primary">+</span>
-                                            <h6 class="text-muted mb-0">Happy Customers</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row align-items-center mt-6">
-                        <div class="col-lg-4 col-md-6">
-                            <div class="p-5" data-bg-color="#d0faec">
-                                <div class="f-icon"> <i class="flaticon-prototype-1"></i>
-                                </div>
-                                <h5 class="mt-4 mb-3">Awesome Design</h5>
-                                <p class="mb-0">Taking design from winck design and typography, contemporary page
-                                    layouts.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-                            <div class="p-5" data-bg-color="#ffeff8">
-                                <div class="f-icon"> <i class="flaticon-lightbulb"></i>
-                                </div>
-                                <h5 class="mt-4 mb-3">Easy to Use</h5>
-                                <p class="mb-0">Taking design from winck design and typography, contemporary page
-                                    layouts.</p>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-                            <div class="p-5" data-bg-color="#d3f6fe">
-                                <div class="f-icon"> <i class="flaticon-friendship"></i>
-                                </div>
-                                <h5 class="mt-4 mb-3">User Friendly</h5>
-                                <p class="mb-0">Taking design from winck design and typography, contemporary page
-                                    layouts.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--feature end-->
-
-
-            <!--about start-->
-
-            <section class="pb-0">
-                <div class="container">
-                    <div class="row align-items-center justify-content-between">
-                        <div class="col-12 col-lg-6 mb-6 mb-lg-0">
-                            <img src="assets/images/app/04.png" alt="Image" class="img-fluid">
-                        </div>
-                        <div class="col-12 col-lg-6 col-xl-5">
-                            <div>
-                                <h2><span class="font-w-4 d-block">Unlimited features</span> awaiting for you</h2>
-                                <p class="lead">We use the latest technologies it voluptatem accusantium doloremque
-                                    laudantium, totam rem aperiam.</p>
-                            </div>
-                            <div>
-                                <div class="mb-3">
-                                    <div class="d-flex align-items-start">
-                                        <div class="me-3"> <span class="list-dot" data-bg-color="#01a479"
-                                                style="background-color: rgb(1, 164, 121);"></span>
-                                        </div>
-                                        <p class="mb-0">Fast Performance technologies it voluptatem</p>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <div class="d-flex align-items-start">
-                                        <div class="me-3"> <span class="list-dot" data-bg-color="#2f2f41"
-                                                style="background-color: rgb(47, 47, 65);"></span>
-                                        </div>
-                                        <p class="mb-0">Quick Access For Build With Static Bootstarp Code</p>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="d-flex align-items-start">
-                                        <div class="me-3"> <span class="list-dot" data-bg-color="#01a479"
-                                                style="background-color: rgb(1, 164, 121);"></span>
-                                        </div>
-                                        <p class="mb-0">Easy to Manage Your All Data access to development</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--about end-->
-
-
-            <!--testimonial start-->
-
-            <section class="custom-pt-2 position-relative bg-dark z-index-1">
-                <div id="particles-js"></div>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="mb-5">
-                                <h2 class="mb-0 text-white"><span class="font-w-4 d-block">You can see our
-                                        clients</span> feedback what you say?</h2>
-                            </div>
-                            <div class="card border-0 bg-transparent">
-                                <div class="card-body p-0"> <i
-                                        class="las la-quote-left ic-2x text-white bg-primary rounded-circle p-1"></i>
-                                    <p class="font-w-5 lead my-3 text-light">Winck Amazing Landing Page All-in-one,
-                                        clean code, Crative &amp; Modern design Professional Recommended crofessional
-                                        and great experience.</p>
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <img alt="Image" src="assets/images/testimonial/01.jpg"
-                                                class="img-fluid rounded-circle">
-                                        </div>
-                                        <div class="ms-3">
-                                            <h5 class="text-primary mb-0">Raymond Lee</h5>
-                                            <small class="text-muted font-italic">- Founder</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-5 mt-md-0">
-                            <div class="card border-0 bg-transparent">
-                                <div class="card-body p-0"> <i
-                                        class="las la-quote-left ic-2x text-white bg-primary rounded-circle p-1"></i>
-                                    <p class="font-w-5 lead my-3 text-light">Winck Amazing Landing Page All-in-one,
-                                        clean code, Crative &amp; Modern design Professional Recommended crofessional
-                                        and great experience.</p>
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <img alt="Image" src="assets/images/testimonial/02.jpg"
-                                                class="img-fluid rounded-circle">
-                                        </div>
-                                        <div class="ms-3">
-                                            <h5 class="text-primary mb-0">Dani Karie</h5>
-                                            <small class="text-muted font-italic">- Supervisor</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card border-0 bg-transparent mt-5">
-                                <div class="card-body p-0"> <i
-                                        class="las la-quote-left ic-2x text-white bg-primary rounded-circle p-1"></i>
-                                    <p class="font-w-5 lead my-3 text-light">Winck Amazing Landing Page All-in-one,
-                                        clean code, Crative &amp; Modern design Professional Recommended crofessional
-                                        and great experience.</p>
-                                    <div class="d-flex align-items-center">
-                                        <div>
-                                            <img alt="Image" src="assets/images/testimonial/03.jpg"
-                                                class="img-fluid rounded-circle">
-                                        </div>
-                                        <div class="ms-3">
-                                            <h5 class="text-primary mb-0">Karlo Bond</h5>
-                                            <small class="text-muted font-italic">- Manager</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="shape-1 overflow-hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                        <path fill="#fff" fill-opacity="1"
-                            d="M0,192L34.3,202.7C68.6,213,137,235,206,224C274.3,213,343,171,411,165.3C480,160,549,192,617,192C685.7,192,754,160,823,138.7C891.4,117,960,107,1029,128C1097.1,149,1166,203,1234,202.7C1302.9,203,1371,149,1406,122.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z">
-                        </path>
-                    </svg>
-                </div>
-            </section>
-
-            <!--testimonial end-->
-
-
-            <!--services start-->
-
-            <section>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-4 col-12 order-lg-1 mb-5 mb-lg-0">
-                            <div class="owl-carousel no-pb" data-dots="false" data-items="1" data-md-items="2"
-                                data-sm-items="2" data-autoplay="true">
-                                <div class="item">
-                                    <div class="p-3 m-5 shadow rounded">
-                                        <img class="img-fluid" src="assets/images/app/01.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="p-3 m-5 shadow rounded">
-                                        <img class="img-fluid" src="assets/images/app/02.jpg" alt="">
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="p-3 m-5 shadow rounded">
-                                        <img class="img-fluid" src="assets/images/app/03.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-12">
-                            <div class="mb-5">
-                                <h2 class="mb-0"><span class="font-w-4 d-block">Winck provide Unique</span> smart
-                                    features</h2>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="me-3">
-                                            <div class="f-icon-s p-3 rounded" data-bg-color="#d0faec"> <i
-                                                    class="flaticon-dashboard"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h5 class="mb-2">Fast Messaging</h5>
-                                            <p class="mb-0">Taking design from winck design and typography layouts.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mt-5 mt-md-0">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="me-3">
-                                            <div class="f-icon-s p-3 rounded" data-bg-color="#ffeff8"> <i
-                                                    class="flaticon-relationship"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h5 class="mb-2">User Friendly</h5>
-                                            <p class="mb-0">Taking design from winck design and typography layouts.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mt-5">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="me-3">
-                                            <div class="f-icon-s p-3 rounded" data-bg-color="#d3f6fe"> <i
-                                                    class="flaticon-solution"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h5 class="mb-2">Live Chat</h5>
-                                            <p class="mb-0">Taking design from winck design and typography layouts.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 mt-5">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="me-3">
-                                            <div class="f-icon-s p-3 rounded" data-bg-color="#fff5d9"> <i
-                                                    class="flaticon-system"></i>
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h5 class="mb-2">24/7 Support</h5>
-                                            <p class="mb-0">Taking design from winck design and typography layouts.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--services end-->
-
-
-
-            <!--blog start-->
-
-            <section class="pt-0">
-                <div class="container">
-                    <div class="row align-items-end mb-5">
-                        <div class="col-12 col-md-12 col-lg-4">
-                            <div>
-                                <h2 class="mb-0"><span class="font-w-4 d-block">From Our Blog</span> List Latest Feed
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-5 ps-lg-5 my-3 my-lg-0">
-                            <p class="lead mb-0">Winck Amazing Landing Page of businesses need access to development
-                                resources.</p>
-                        </div>
-                        <div class="col-12 col-md-12 col-lg-3 text-lg-end"> <a href="blog-listing.html"
-                                class="btn btn-primary">
-                                View More Post
-                            </a>
-                        </div>
-                    </div>
-                    <!-- / .row -->
-                    <div class="row">
-                        <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                            <!-- Blog Card -->
-                            <div class="card bg-transparent">
-                                <img class="card-img-top" src="assets/images/blog/01.jpg" alt="Image">
-                                <div class="card-body p-4">
-                                    <div>
-                                        <div class="d-inline-block bg-light text-center px-2 py-1 rounded me-2"><span
-                                                class="text-primary">05</span>
-                                            Sep</div> <a class="d-inline-block btn-link" href="#">Sass</a>
-                                    </div>
-                                    <h2 class="h5 my-3">
-                                        <a class="link-title" href="blog-single.html">Winck trending landing page
-                                            2020</a>
-                                    </h2>
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item pe-3"> <a href="#" class="list-group-item-action"><i
-                                                    class="lar la-user-circle me-1 text-primary ic-1x"></i> Admin</a>
-                                        </li>
-                                        <li class="list-inline-item pe-3"> <a href="#" class="list-group-item-action"><i
-                                                    class="las la-eye me-1 text-primary ic-1x"></i> 275</a>
-                                        </li>
-                                        <li class="list-inline-item"> <a href="#" class="list-group-item-action"><i
-                                                    class="lar la-comments me-1 text-primary ic-1x"></i> 300</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- End Blog Card -->
-                        </div>
-                        <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                            <!-- Blog Card -->
-                            <div class="card bg-transparent">
-                                <img class="card-img-top" src="assets/images/blog/02.jpg" alt="Image">
-                                <div class="card-body p-4">
-                                    <div>
-                                        <div class="d-inline-block bg-light text-center px-2 py-1 rounded me-2"><span
-                                                class="text-primary">05</span>
-                                            Sep</div> <a class="d-inline-block btn-link" href="#">Software</a>
-                                    </div>
-                                    <h2 class="h5 my-3">
-                                        <a class="link-title" href="blog-single.html">The evolution of landing page
-                                            creativity</a>
-                                    </h2>
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item pe-3"> <a href="#" class="list-group-item-action"><i
-                                                    class="lar la-user-circle me-1 text-primary ic-1x"></i> Admin</a>
-                                        </li>
-                                        <li class="list-inline-item pe-3"> <a href="#" class="list-group-item-action"><i
-                                                    class="las la-eye me-1 text-primary ic-1x"></i> 275</a>
-                                        </li>
-                                        <li class="list-inline-item"> <a href="#" class="list-group-item-action"><i
-                                                    class="lar la-comments me-1 text-primary ic-1x"></i> 300</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- End Blog Card -->
-                        </div>
-                        <div class="col-md-6 col-lg-4">
-                            <!-- Blog Card -->
-                            <div class="card bg-transparent">
-                                <img class="card-img-top" src="assets/images/blog/03.jpg" alt="Image">
-                                <div class="card-body p-4">
-                                    <div>
-                                        <div class="d-inline-block bg-light text-center px-2 py-1 rounded me-2"><span
-                                                class="text-primary">05</span>
-                                            Sep</div> <a class="d-inline-block btn-link" href="#">Landing</a>
-                                    </div>
-                                    <h2 class="h5 my-3">
-                                        <a class="link-title" href="blog-single.html">How to growth business with
-                                            Winck</a>
-                                    </h2>
-                                    <ul class="list-inline mb-0">
-                                        <li class="list-inline-item pe-3"> <a href="#" class="list-group-item-action"><i
-                                                    class="lar la-user-circle me-1 text-primary ic-1x"></i> Admin</a>
-                                        </li>
-                                        <li class="list-inline-item pe-3"> <a href="#" class="list-group-item-action"><i
-                                                    class="las la-eye me-1 text-primary ic-1x"></i> 275</a>
-                                        </li>
-                                        <li class="list-inline-item"> <a href="#" class="list-group-item-action"><i
-                                                    class="lar la-comments me-1 text-primary ic-1x"></i> 300</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <!-- End Blog Card -->
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--blog end-->
-
-
-            <!--newsletter start-->
-
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <div class="bg-light bg-pos-l py-6 px-4 px-lg-6 text-center rounded"
-                                data-bg-img="assets/images/bg/02.png">
-                                <div class="mb-5">
-                                    <h2><span class="font-w-4 d-block">Subscribe newsletter</span> now for a custom
-                                        built</h2>
-                                </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-9">
-                                        <div class="subscribe-form text-center">
-                                            <form id="mc-form" class="row mb-3">
-                                                <div class="col-md">
-                                                    <input type="text" value="" name="NAME"
-                                                        class="name form-control border-0 shadow-sm rounded"
-                                                        id="mc-name" placeholder="Your Name" required="">
-                                                </div>
-                                                <div class="col-md">
-                                                    <input type="email" value="" name="EMAIL"
-                                                        class="email form-control border-0 shadow-sm rounded mt-3 mt-md-0"
-                                                        id="mc-email" placeholder="Email Address" required="">
-                                                </div>
-                                                <div class="col-md-auto">
-                                                    <input class="btn btn-dark mt-3 mt-md-0" type="submit"
-                                                        name="subscribe" value="Subscribe Now">
-                                                </div>
-                                            </form>
-                                            <small class="text-dark">Get started for 1 Month free trial No Purchace
-                                                required.</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--newsletter end-->
-
-        </div>
-
-        <!--body content end-->
-
-
-        <!--footer start-->
-
-        <footer class="bg-dark py-7">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-5 col-xl-4 me-auto mb-5 mb-lg-0">
-                        <a class="footer-logo h2 text-primary mb-0 font-w-7" href="index.html">
-                            W<span class="text-white font-w-4">inck.</span>
-                        </a>
-                        <p class="my-3 text-light">Winck - Bootstrap 5 Multipurpose Landing Page Is fully responsible,
-                            Build whatever you like with the Winck.</p>
-                        <ul class="list-inline">
-                            <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
-                                        class="la la-facebook"></i></a>
-                            </li>
-                            <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
-                                        class="la la-dribbble"></i></a>
-                            </li>
-                            <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
-                                        class="la la-instagram"></i></a>
-                            </li>
-                            <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
-                                        class="la la-twitter"></i></a>
-                            </li>
-                            <li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i
-                                        class="la la-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-lg-6 col-xl-7">
-                        <div class="row">
-                            <div class="col-12 col-sm-4">
-                                <h5 class="mb-4 text-white">Pages</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li class="mb-3"><a class="list-group-item-action text-light"
-                                            href="about-us-1.html">About</a>
-                                    </li>
-                                    <li class="mb-3"><a class="list-group-item-action text-light"
-                                            href="product-grid.html">Shop</a>
-                                    </li>
-                                    <li class="mb-3"><a class="list-group-item-action text-light"
-                                            href="faq.html">Faq</a>
-                                    </li>
-                                    <li><a class="list-group-item-action text-light" href="contact-us.html">Contact
-                                            Us</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-sm-4 mt-6 mt-sm-0">
-                                <h5 class="mb-4 text-white">Service</h5>
-                                <ul class="list-unstyled mb-0">
-                                    <li class="mb-3"><a class="list-group-item-action text-light" href="#">Content
-                                            Writing</a>
-                                    </li>
-                                    <li class="mb-3"><a class="list-group-item-action text-light"
-                                            href="#">Documentation</a>
-                                    </li>
-                                    <li class="mb-3"><a class="list-group-item-action text-light"
-                                            href="login.html">Account</a>
-                                    </li>
-                                    <li><a class="list-group-item-action text-light" href="career.html">Careers</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-12 col-sm-4 mt-6 mt-sm-0">
-                                <h5 class="mb-4 text-white">Our Address</h5>
-                                <div class="mb-3">
-                                    <p class="mb-0 text-light">423B, Road Wordwide Country, USA</p>
-                                </div>
-                                <div class="mb-3">
-                                    <a class="btn-link text-light" href="mailto:themeht23@gmail.com">
-                                        themeht23@gmail.com</a>
-                                </div>
-                                <div>
-                                    <a class="btn-link text-light" href="tel:+912345678900">+91-234-567-8900</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row my-5">
-                    <div class="col">
-                        <hr class="m-0">
-                    </div>
-                </div>
-                <div class="row align-items-center">
-                    <div class="col-md-6 text-light">
-                        Copyright ©2020 All rights reserved | Winck is made by <i
-                            class="lar la-heart text-primary heartBeat2"></i> <u><a class="text-primary"
-                                href="#">ThemeHt</a></u></div>
-                    <div class="col-md-6 text-md-end mt-3 mt-md-0">
-                        <ul class="list-inline mb-0">
-                            <li class="me-3 list-inline-item"> <a class="list-group-item-action text-light" href="#">
-                                    Term Of Service
-                                </a>
-                            </li>
-                            <li class="me-3 list-inline-item"> <a class="list-group-item-action text-light" href="#">
-                                    Privacy Policy
-                                </a>
-                            </li>
-                            <li class="list-inline-item"> <a class="list-group-item-action text-light" href="#">
-                                    Support
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!--footer end-->
-
+        <!--menu end-->
+      </div>
     </div>
+  </div>
+</header>
 
-    <!-- page wrapper end -->
+<!--header end-->
 
 
-    <!--back-to-top start-->
+<!--hero section start-->
 
-    <div class="scroll-top"><a class="smoothscroll" href="#top">Scroll Top</a></div>
+<section class="hero-banner position-relative custom-pb-3 bg-dark z-index-1">
+  <div id="particles-js"></div>
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-12 col-lg-10">
+        <h6 class="rounded-pill px-3 py-2 text-dark d-inline-block mb-4 border border-primary text-light">Lensa Powerlenses <span class="typer text-primary" data-words="Premium,Membantu Menggapai Mimpi,Higienis,Steril,Terbaik,Terpercaya,Nyaman Dipakai,100% Membantu,Aman" ></span>
+        <span class="cursor" data-owner="some-id"></span></h6> 
+        <h2 class="mb-1 text-white">
+              Powering Your Vision            
+            </h2>
+      </div>
+    </div>
+    <!-- / .row -->
+  </div>
+  <!-- / .container -->
+  <div class="shape-1 bottom overflow-hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200">
+      <path fill="#ffffff" fill-opacity="1" d="M0,32L48,48C96,64,192,96,288,122.7C384,149,480,171,576,170.7C672,171,768,149,864,144C960,139,1056,149,1152,133.3C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+  </div>
+</section>
 
-    <!--back-to-top end-->
+<!--hero section end--> 
 
-    <!-- inject js start -->
 
-    <!--== jquery -->
-    <script src="assets/js/jquery.min.js"></script>
+<!--body content start-->
 
-    <!--== bootstrap -->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+<div class="page-content">
 
-    <!--== owl-carousel -->
-    <script src="assets/js/owl.carousel.min.js"></script>
+<!--slider start-->
 
-    <!--== magnific-popup -->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+<section class="p-0">
+  <div class="container">
+    <div class="row justify-content-center mt-n15 z-index-1">
+      <div class="col-sm-10">
+        <div class="bg-white shadow-primary rounded overflow-hidden p-3">
+          <div class="owl-carousel no-pb" data-dots="false" data-items="1" data-autoplay="true">
+            <div class="item">
+    	        <img class="img-fluid border border-light" src="assets/images/produk/powerlenses_pack1.jpg" alt="">
+            </div>
+			<div class="item">
+				<img class="img-fluid border border-light" src="assets/images/produk/powerlenses_pack2.jpg" alt="">
+			</div>
+			<div class="item">
+				<img class="img-fluid border border-light" src="assets/images/produk/vision_pack.jpg" alt="">
+			</div>
+			<div class="item">
+				<img class="img-fluid border border-light" src="assets/images/produk/pack2.jpg" alt="">
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!--== counter -->
-    <script src="assets/js/counter.js"></script>
+<!--slider end-->
+<!--feature start-->
 
-    <!--== countdown -->
-    <script src="assets/js/jquery.countdown.min.js"></script>
+<section>
+	<div class="container">
+	  <div class="row justify-content-center text-center">
+		<div class="col-lg-8">
+		  <div class="mb-5">
+			<h2 class="mb-0"><span class="font-w-4 d-block">Keunggulan</span> Powerlenses dan Vision</h2>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row">
+		<div class="col-lg-4 col-md-6">
+		  <div class="d-flex justify-content-between">
+			<div class="me-3">
+			  <div class="f-icon-s p-3 rounded" data-bg-color="#d0faec"> <i class="flaticon-dashboard"></i>
+			  </div>
+			</div>
+			<div>
+			  <h5 class="mb-2">Premium</h5>
+			  <p class="mb-0">Powerlenses merupakan lensa beteknologi dan eksklusif.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-lg-4 col-md-6 mt-5 mt-md-0">
+		  <div class="d-flex justify-content-between">
+			<div class="me-3">
+			  <div class="f-icon-s p-3 rounded" data-bg-color="#ffeff8"> <i class="flaticon-relationship"></i>
+			  </div>
+			</div>
+			<div>
+			  <h5 class="mb-2">100% Berfungsi</h5>
+			  <p class="mb-0">Jika tidak berfungsi dengan baik, kami ganti baru.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-lg-4 col-md-6 mt-5 mt-lg-0">
+		  <div class="d-flex justify-content-between">
+			<div class="me-3">
+			  <div class="f-icon-s p-3 rounded" data-bg-color="#d3f6fe"> <i class="flaticon-solution"></i>
+			  </div>
+			</div>
+			<div>
+			  <h5 class="mb-2">Nyaman</h5>
+			  <p class="mb-0">Powerlenses nyaman digunakan dan steril.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-lg-4 col-md-6 mt-5">
+		  <div class="d-flex justify-content-between">
+			<div class="me-3">
+			  <div class="f-icon-s p-3 rounded" data-bg-color="#fff5d9"> <i class="flaticon-system"></i>
+			  </div>
+			</div>
+			<div>
+			  <h5 class="mb-2">Melihat Jelas</h5>
+			  <p class="mb-0">Teknologi Powerlenses membuat anda bisa melihat pola dengan jelas.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-lg-4 col-md-6 mt-5">
+		  <div class="d-flex justify-content-between">
+			<div class="me-3">
+			  <div class="f-icon-s p-3 rounded" data-bg-color="#fdf9ee"> <i class="flaticon-friendship"></i>
+			  </div>
+			</div>
+			<div>
+			  <h5 class="mb-2">Terjangkau</h5>
+			  <p class="mb-0">Dengan harga terjangkau anda mendapatkan barang premium.</p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-lg-4 col-md-6 mt-5">
+		  <div class="d-flex justify-content-between">
+			<div class="me-3">
+			  <div class="f-icon-s p-3 rounded" data-bg-color="#e5f5f5"> <i class="flaticon-call-center-1"></i>
+			  </div>
+			</div>
+			<div>
+			  <h5 class="mb-2">Pasti Lolos</h5>
+			  <p class="mb-0">Kenyamanan dan fungsi yang berfungsi baik menjadikan anda lolos tes ishihara.</p>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </section>
+  
+  <!--feature end-->
 
-    <!--== particles -->
-    <script src="assets/js/particles.js"></script>
+  <footer class="bg-dark py-7">
+	<div class="container">
+	  <div class="row">
+		<div class="col-12 col-lg-5 col-xl-4 me-auto mb-5 mb-lg-0">
+		  <a class="footer-logo h2 text-primary mb-0 font-w-7" href="index.html">
+				P<span class="text-white font-w-4">owerlenses.</span>
+			  </a>
+			  <p class="my-3 text-light">Winck - Bootstrap 5 Multipurpose Landing Page Is fully responsible, Build whatever you like with the Winck.</p>
+			  <ul class="list-inline">
+			<li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i class="la la-facebook"></i></a>
+			</li>
+			<li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i class="la la-dribbble"></i></a>
+			</li>
+			<li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i class="la la-instagram"></i></a>
+			</li>
+			<li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i class="la la-twitter"></i></a>
+			</li>
+			<li class="list-inline-item"><a class="border rounded px-2 py-1 text-light" href="#"><i class="la la-linkedin"></i></a>
+			</li>
+		  </ul>
+		</div>
+		<div class="col-12 col-lg-6 col-xl-7">
+		  <div class="row">
+			<div class="col-12 col-sm-4">
+			  <h5 class="mb-4 text-white">Pages</h5>
+			  <ul class="list-unstyled mb-0">
+				<li class="mb-3"><a class="list-group-item-action text-light" href="about-us-1.html">About</a>
+				</li>
+				<li class="mb-3"><a class="list-group-item-action text-light" href="product-grid.html">Shop</a>
+				</li>
+				<li class="mb-3"><a class="list-group-item-action text-light" href="faq.html">Faq</a>
+				</li>
+				<li><a class="list-group-item-action text-light" href="contact-us.html">Contact Us</a>
+				</li>
+			  </ul>
+			</div>
+			<div class="col-12 col-sm-4 mt-6 mt-sm-0">
+			  <h5 class="mb-4 text-white">Service</h5>
+			  <ul class="list-unstyled mb-0">
+				<li class="mb-3"><a class="list-group-item-action text-light" href="#">Content Writing</a>
+				</li>
+				<li class="mb-3"><a class="list-group-item-action text-light" href="#">Documentation</a>
+				</li>
+				<li class="mb-3"><a class="list-group-item-action text-light" href="login.html">Account</a>
+				</li>
+				<li><a class="list-group-item-action text-light" href="career.html">Careers</a>
+				</li>
+			  </ul>
+			</div>
+			<div class="col-12 col-sm-4 mt-6 mt-sm-0">
+			  <h5 class="mb-4 text-white">Our Address</h5>
+			  <div class="mb-3">
+			<p class="mb-0 text-light">423B, Road Wordwide Country, USA</p>
+		  </div>
+		  <div class="mb-3">
+			<a class="btn-link text-light" href="mailto:themeht23@gmail.com"> themeht23@gmail.com</a>
+		  </div>
+		  <div>
+			<a class="btn-link text-light" href="tel:+912345678900">+91-234-567-8900</a>
+		  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  <div class="row my-5">
+		<div class="col"><hr class="m-0"></div>
+	  </div>
+	  <div class="row align-items-center">
+		<div class="col-md-6 text-light">
+		  Copyright ©2021 All rights reserved | Powerlenses</div>
+		  <div class="col-md-6 text-md-end mt-3 mt-md-0">
+			<ul class="list-inline mb-0">
+			  <li class="me-3 list-inline-item"> <a class="list-group-item-action text-light" href="#">
+					Term Of Service
+				  </a>
+			  </li>
+			  <li class="me-3 list-inline-item"> <a class="list-group-item-action text-light" href="#">
+					Privacy Policy
+				  </a>
+			  </li>
+			  <li class="list-inline-item"> <a class="list-group-item-action text-light" href="#">
+					Support
+				  </a>
+			  </li>
+			</ul>
+		  </div>
+	  </div>
+	</div>
+  </footer>
+  
+  <!--footer end-->
+  
+  </div>
+  
+  <!-- page wrapper end -->
+ 
+<!--back-to-top start-->
+<div class="adminActions" style="z-index: 100;">
+	<input type="checkbox" name="adminToggle" class="adminToggle" />
+	<a class="adminButton" href="#!"><i class="fa fa-cog"></i></a>
+	<div class="adminButtons">
+		<!-- <a href="#" title="Add Company"><i class="fa fa-whatsapp"></i></a>
+		<a href="#" title="Facebook"><i class="fa fa-facebook"></i></a> -->
+		<a href="https://instagram.com/powerlenses" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a>
+		<a href="https://wa.me/6281914921646?text=Saya%20sudah%20melihat%20website%20anda%20dan%20ingin%20tahu%20lebih%20lanjut" target="_blank" title="Whatsapp"><i class="fa fa-whatsapp"></i></a>
+	</div>
+</div>
 
-    <!--== typer -->
-    <script src="assets/js/typer.js"></script>
+<div class="scroll-top"><a class="smoothscroll" href="#top">Scroll Top</a></div>
 
-    <!--== wow -->
-    <script src="assets/js/wow.min.js"></script>
+<!--back-to-top end-->
 
-    <!--== theme-script -->
-    <script src="assets/js/theme-script.js"></script>
+<!-- inject js start -->
 
-    <!-- inject js end -->
+<!--== jquery -->
+<script src="assets/js/jquery.min.js"></script> 
+
+<!--== bootstrap -->
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+
+<!--== owl-carousel -->
+<script src="assets/js/owl.carousel.min.js"></script> 
+
+<!--== magnific-popup --> 
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+<!--== counter -->
+<script src="assets/js/counter.js"></script> 
+
+<!--== countdown -->
+<script src="assets/js/jquery.countdown.min.js"></script>
+
+<!--== particles -->
+<script src="assets/js/particles.js"></script>
+
+<!--== typer -->
+<script src="assets/js/typer.js"></script> 
+
+<!--== wow -->
+<script src="assets/js/wow.min.js"></script>
+
+<!--== theme-script -->
+<script src="assets/js/theme-script.js"></script>
+
+<!-- inject js end -->
 
 </body>
 
