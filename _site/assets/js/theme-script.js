@@ -207,7 +207,7 @@ function scrolltop() {
 function fxheader() {
   $(window).on('scroll', function () {
     if ($(window).scrollTop() >= 300) {
-      $('#header-wrap').addClass('fixed-header');
+      //$('#header-wrap').addClass('fixed-header');
     } else {
       $('#header-wrap').removeClass('fixed-header');
     }
